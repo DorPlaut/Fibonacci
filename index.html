@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fibonacci</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="./normlize.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- load screen -->
+    <div class="load-container">
+      <i class="fa-brands fa-connectdevelop" id="load-img"></i>
+    </div>
+    <!-- header -->
+    <header class="header">
+      <h1>Fibonacci Calculator</h1>
+      <h4>and background generator</h4>
+    </header>
+    <!-- introdaction -->
+    <p class="proluge">
+      Hello there. Here you can calculate the Fibonacci value of a number. in
+      addition the page will generate cool frectal background based on your
+      values. enjoy. <br />
+      <span class="alert-success">Number have to be between 0 and 50. </span>
+    </p>
+
+    <!-- content -->
+    <section>
+      <div class="claculator">
+        <div class="form-container">
+          <form class="form">
+            <input type="number" placeholder="X" class="num-input" />
+            <br />
+            <button class="btn" type="submit">calculate</button>
+          </form>
+          <p class="alert"></p>
+        </div>
+        <h3>
+          The Fibonacci of <span class="x-var">X</span> is
+          <span class="y-var">Y</span>
+        </h3>
+      </div>
+    </section>
+    <!-- frectal -->
+    <div class="frectal">
+      <canvas class="canvas"></canvas>
+    </div>
+    <button class="btn clr-btn">clear background</button>
+    <br /><br />
+    <!-- footer -->
+    <footer>
+      <p>
+        Build by
+        <a href="https://dorplaut.github.io/portfolio/" target="_blank"
+          >Dor Plaut</a
+        >
+        2022 &copy;
+      </p>
+    </footer>
+    <!-- js -->
+    <script src="./app.js"></script>
+    <!-- fontaowsome -->
+    <script
+      src="https://kit.fontawesome.com/3f09da8819.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
